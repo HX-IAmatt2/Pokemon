@@ -1,0 +1,93 @@
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 60%;
+  background-color: rgb(228, 228, 228);
+  border-radius: 20px;
+  border-color: rgb(221, 183, 13);
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 10px 10px 50px;
+}
+
+.head {
+  /* border-style: solid; */
+  padding: 1rem;
+}
+
+.body {
+  /* border-style: solid; */
+  padding: 2rem;
+}
+
+#title {
+  margin-top: 2rem;
+  width: 400px;
+}
+
+#serverDown {
+  margin: auto;
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+#pokeball {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100px;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#loading {
+  width: 200px;
+  margin: auto;
+  margin-top: 4rem;
+}

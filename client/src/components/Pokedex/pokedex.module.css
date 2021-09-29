@@ -1,0 +1,352 @@
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  font-size: 11px;
+}
+
+.main {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pokedex {
+  /* border-style: solid; */
+  font-family: 'Press Start 2P', cursive;
+  align-self: center;
+  height: 650px;
+  width: 900px;
+  background-image: url('../../assets/img/pokedex.png');
+  background-size: cover;
+  background-size: 900px;
+  background-repeat: no-repeat;
+}
+
+#idDiv {
+  /* border-style: solid; */
+  width: 200px;
+  position: absolute;
+  margin-top: 552px;
+  margin-left: 92px;
+  font-size: 15px;
+  color: black;
+}
+
+#nameDiv {
+  /* border-style: solid; */
+  width: 200px;
+  position: absolute;
+  margin-top: 582px;
+  margin-left: 92px;
+  font-size: 15px;
+  color: black;
+}
+
+#imgScreenStandard {
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  border-width: 1px;
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 75px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('../../assets/backgrounds/standard.png');
+  background-size: cover;
+  background-position: center ;
+}
+
+#imgScreenSky {
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  border-width: 1px;
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 75px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('../../assets/backgrounds/sky.png');
+  background-size: cover;
+}
+
+#imgScreenWater {
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  border-width: 1px;
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 75px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('../../assets/backgrounds/water.png');
+  background-size: cover;
+}
+
+#img {
+  /* border-style: solid; */
+  max-width: 230px;
+  height: 150px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  margin-bottom: 1rem;
+  transform-origin: bottom;
+}
+
+#img:hover {
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+#statsScreen {
+  /* border-style: solid; */
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  margin-left: 547px;
+  height: 138px;
+  width: 280px;
+  flex-direction: column;
+  color: white;
+  font-size: 13px;
+}
+
+.statDiv {
+  display: flex;
+}
+
+.statTitle {
+  margin-right: 0.5rem;
+  font-size: 12px;
+  color: rgb(235, 231, 48);
+}
+
+#deleteName {
+  color: rgb(235, 231, 48);
+}
+
+#deleteOptionsBox {
+  /* border-style: solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.deleteOption {
+  font-size: 14px;
+  transition: all 0.1s ease-in-out;
+  width: 25%;
+}
+
+.deleteOptionDisabled{
+  /* border-style: solid; */
+  color: darkgray;
+  font-size: 14px;
+  transition: all 0.1s ease-in-out;
+  width: 25%;
+}
+
+.deleteOption:hover {
+  font-size: 18px;
+  color: rgb(235, 231, 48);
+  cursor: pointer;
+}
+
+.errorBox{
+  /* border-style: solid; */
+  color: red;
+  height: 30px;
+}
+
+#typesIconsDiv {
+  /* border-style: solid; */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 359px;
+  margin-left: 545px;
+  width: 115px;
+  height: 42px;
+}
+
+.typeIcon {
+  height: 35px;
+  width: 35px;
+}
+
+#typeIconUnique {
+  height: 35px;
+  width: 35px;
+  margin-right: 58px;
+}
+
+#heightTitleDiv {
+  /* border-style: solid; */
+  position: absolute;
+  width: 128px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 540px;
+  margin-left: 540px;
+  color: white;
+}
+
+#heightDiv {
+  /* border-style: solid; */
+  width: 128px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  margin-top: 569px;
+  margin-left: 540px;
+  color: white;
+}
+
+#weightTitleDiv {
+  /* border-style: solid; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 30px;
+  margin-top: 540px;
+  margin-left: 704px;
+  color: white;
+}
+
+#weightDiv {
+  /* border-style: solid; */
+  position: absolute;
+  width: 128px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 569px;
+  margin-left: 704px;
+  color: white;
+}
+
+#deleteDiv {
+  /* border-style: solid; */
+  position: absolute;
+  margin-top: 481px;
+  margin-left: 603px;
+  width: 58px;
+
+}
+
+#deleteButton {
+  width: 45px;
+  transition: all 0.2s ease-in-out;
+}
+
+#deleteButton:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+#renameDiv {
+  /* border-style: solid; */
+  position: absolute;
+  margin-top: 484px;
+  margin-left: 544px;
+  width: 58px;
+}
+
+#renameButton {
+  width: 39px;
+  transition: all 0.2s ease-in-out;
+}
+
+#renameButton:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+#powerOffDiv {
+  /* border-style: solid; */
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 37px;
+}
+
+#powerOffIcon {
+  /* border-style: solid; */
+  width: 102px;
+  transition: all 0.2s ease-in-out;
+}
+
+#powerOffIcon:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+#inputName {
+  background-color: rgba(0, 0, 0, 0.281);
+  color: rgb(235, 231, 48);
+  font-family: 'Press Start 2P', cursive;
+  width: 70%;
+  /* border-style: none; */
+}
+
+#inputBox {
+  /* border-style: solid; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}

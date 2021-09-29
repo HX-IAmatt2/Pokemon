@@ -1,0 +1,191 @@
+.tablet {
+  font-family: 'Press Start 2P', cursive;
+  width: 1200px;
+  height: 655px;
+  background-image: url('../../assets/img/tablet.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#topLCD {
+  border-style: solid;
+  border-color: rgb(90, 90, 90);
+  display: flex;
+  margin: auto;
+  margin-top: 26px;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 30px;
+  background-color: rgb(92, 166, 201);
+  font-size: 13px;
+}
+
+#mainScreen {
+  border-style: solid;
+  border-color: rgb(90, 90, 90);
+  margin-top: 9px;
+  margin-left: 71px;
+  width: 1063px;
+  height: 520px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url('../../assets/img/bg_main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1058px;
+  background-position: center;
+}
+
+.optionsDiv {
+  /* border-style: solid; */
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.option {
+  /* border-style: solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.orders {
+  display: flex;
+  flex-direction: row;
+}
+
+.order {
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+.grid {
+  /* border-style: solid; */
+  display: flex;
+  flex-wrap: wrap;
+  height: 435px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(121, 121, 121);
+  padding: 0.3rem;
+  border-width: 1px;
+  flex: 0 0 30%;
+  margin: 5px 5px;
+  width: 100px;
+  height: 130px;
+  background-color: rgb(241, 241, 241, 0.8);
+  box-shadow: 6px 6px 10px rgba(71, 71, 71, 0.425);
+  cursor: pointer;
+}
+
+.pokeImg {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.pokeImg:hover {
+  transform: scale(1.1);
+}
+
+#bottomButtons {
+  /* border-style: solid; */
+  border-color: white;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  width: 200px;
+}
+
+.buttonDiv {
+  /* border-style: solid; */
+  border-color: white;
+  width: 50%;
+}
+
+.arrow {
+  width: 65px;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrowDisabled {
+  width: 65px;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.typeIcon {
+  width: 35px;
+}
+
+.typeDiv {
+  /* border-style: solid; */
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#newPokemonButton {
+  font-family: 'Press Start 2P', cursive;
+  color: aliceblue;
+  background-color: rgb(77, 194, 77);
+  padding: 0.2rem;
+  font-size: 12px;
+  border-radius: 5px;
+  height: 3rem;
+  width: 150px;
+  cursor: pointer;
+}
+
+div {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+
+input {
+  border-radius: 5px;
+  height: 25px;
+  font-size: 1rem;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+select {
+  border-radius: 5px;
+  height: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.u-flip {
+  animation: flip 1400ms infinite;
+  animation-timing-function: cubic-bezier(0.1, 0.67, 0.88, 0.34);
+}
